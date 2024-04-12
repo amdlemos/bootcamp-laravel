@@ -18,6 +18,9 @@
                     <x-nav-link :href="route('chirps.index')" :active="request()->routeIs('chirps.index')">
                         {{ __('Chirps') }}
                     </x-nav-link>
+                    <div class="-me-2 flex items-center">
+                        @include('components.slide-over')
+                    </div>
                 </div>
             </div>
 
